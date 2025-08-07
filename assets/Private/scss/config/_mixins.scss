@@ -1,0 +1,47 @@
+// --------- Box shadow ---------
+@mixin box-shadow($box-shadow) {
+    -moz-box-shadow: $box-shadow;
+    -webkit-box-shadow: $box-shadow;
+    box-shadow: $box-shadow;
+}
+
+
+// --------- Code pour les boutons ---------
+@mixin btn($color: $primary){
+    padding: .5em 2em;
+    transition: backgound .3s;
+    border-radius: 4px;
+    background-color: $primary;
+    // option pour metre dynamiquement la couler du text. 
+    // noir si la couleur est sombre blanche si elle est clair
+    &:hover{
+        transition: backgound .3s;
+    }
+}
+
+// --------- boutons aec icones ---------
+@mixin btn-icon($gap: 1em, $icon-size: 1em){
+    @include btn;
+    display: flex;
+    align-items: center;
+    gap: $gap;
+
+    i{
+      font-size: $icon-size;
+    }
+
+}
+
+// --------- Gerer l'alignement ---------
+// @include flex(column, space-between, flex-start);
+@mixin flex($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+// --------- centrer du contenue ---------
+@mixin flex-center {
+  @include flex;
+}

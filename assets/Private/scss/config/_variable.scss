@@ -1,0 +1,64 @@
+       @use "../themes/theme" as *;
+
+             
+       $primary: var(--primary);
+       $secondary: var(--secondary);
+       $tirth: var(--tirth);
+ 
+
+       $section-h-padding: 4vw; // espacement horizontal general de l'app.
+
+
+       // Breakpoints
+       //- Phone
+       $break-smal-phone: 320px !default;
+       $break-phone: 390px !default;
+       $break-big-phone: 480px !default;
+
+       //- Tablet
+       $break-small-tablet: 640px !default;
+       $break-tablet: 768px !default;
+       $break-big-tablet: 1024px !default;
+
+       //- Pc
+       $break-small-pc: 1280px !default;
+       $break-pc: 1600px !default;
+       $break-big-pc: 1920px !default;
+       $break-ultra-pc: 2560px !default;
+
+
+       // Media screnn
+       //- Phone
+       // up
+       $smal-phone-up: "only screen and (min-width: #{$break-smal-phone})";
+       $phone-up: "only screen and (min-width: #{$break-phone})";
+       $big-phone-up: "only screen and (min-width: #{$break-big-phone})";
+
+       // down
+       $smal-phone-down: "only screen and (max-width: #{$break-smal-phone})";
+       $phone-down: "only screen and (max-width: #{$break-phone})";
+       $big-phone-down: "only screen and (max-width: #{$break-big-phone})";
+
+       //- Tablet
+       // up
+       $smal-tablet-up: "only screen and (min-width: #{$break-small-tablet})";
+       $tablet-up: "only screen and (min-width: #{$break-tablet})";
+       $big-tablet-up: "only screen and (min-width: #{$break-big-tablet})";
+
+       // down
+       $smal-tablet-down: "only screen and (max-width: #{$break-small-tablet})";
+       $tablet-down: "only screen and (max-width: #{$break-tablet})";
+       $big-tablet-down: "only screen and (max-width: #{$break-big-tablet})";
+
+       //- PC
+       // up
+       $smal-pc-up: "only screen and (min-width: #{$break-small-pc})";
+       $pc-up: "only screen and (min-width: #{$break-pc})";
+       $big-pc-up: "onlys creen and (min-width: #{$break-big-pc})";
+       $ultra-pc-up: "only screen and (min-width: #{$break-ultra-pc})";
+
+       // down
+       $smal-pc-down: "only screen and (max-width: #{$break-small-pc})";
+       $pc-down: "only screen and (max-width: #{$break-pc})";
+       $big-pc-down: "only screen and (max-width: #{$break-big-pc})";
+       $ultra-pc-down: "only screen and (max-width: #{$break-ultra-pc})";

@@ -1,0 +1,18 @@
+{
+  "author": "Ton Nom",
+  "license": "MIT",
+  "name": "mon-projet",
+  "version": "1.0.0",
+  "description": "Un projet web moderne avec Sass et Express",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "sass assets/private/scss/main.scss assets/public/css/style.css",
+    "watch-css": "sass --watch assets/private/scss/reset.scss assets/public/css/style.css"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "sass": "^1.89.2"
+  }
+}

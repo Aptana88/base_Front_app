@@ -1,0 +1,46 @@
+//function
+//syntaxe: namefunction(params)
+
+// retire l'unité d'une valeur ex (%,px,em...)
+@function strip-unit($number) {
+    @if type-of($number)=='number' and not unitless($number) {
+        @return $number / ($number*0+1);
+    }
+
+    @return $number;
+}
+
+// converti le pixel en rem
+@function rem($size, $base: $root-font-size) {
+    @return 1rem * $size / strip-unit($root-font-size);
+}
+
+// converti le pixel en em
+@function em($size, $base: $root-font-size) {
+    // a tester
+    @return 1em * $size / strip-unit($base);
+}
+
+// renvoir la couleur blanche si la couleur passé en parametre et sombre et
+// noir si elle est clair. ideal pour changer dynamiquement la couleur du texte.
+// par defaut les couleur retourné sont soit un blanc grisatre (ligth)
+// soit un gris bleu foncé (dark)
+@function dynamique-color($color, $ligth-color: $light, $dark-color: $dark) {
+    @if (ligthtness($color)) {
+        @return $dark-color;
+    }
+
+    @else {
+        @return $ligth-color;
+    }
+}
+
+// assombri une couleur si elle est clair et l'eclairci si elle est foncé.
+@function light-dark($color, $val: 80%) {
+    @if (ligthtness($color)) {
+        @return darken($color, $val);
+    }
+    @else {
+        @return ligthen($color, $val);
+    }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Description pour les moteurs de recherche -->
+    <meta name="description" content="description du projet.">
+
+    <!-- Mots-clés (moins utilisé aujourd’hui mais utile pour les moteurs internes) -->
+    <meta name="keywords" content="Mots clé du projet">
+
+    <!-- Auteur -->
+    <meta name="author" content="Guy Michel Foko">
+
+    <!-- --- Favicon --- -->
+    <link rel="shortcut icon" href="assets/public/images/favicon/favicon.png" type="image/x-icon">
+
+    <title>Nom du site | Module 🚀</title>
+
+    <!-- Mes styles -->
+    <link rel="stylesheet" href="assets/public/css/style.css">
+    <link rel="stylesheet" href="assets/public/boxicons-2.0.7/css/boxicons.min.css">
+
+    <!-- AOS et Alpine JS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"></script>
+</head>
+
+<body>
+    <div class="ct-page">
+
+        <!-- -------------------  Navigation ------------------- -->
+        <nav class="navigation">
+            <div class="logo"></div>
+            <ul class="menue">
+                <li class="item"><a href="#">Contact</a></li>
+                <li class="item"><a href="#">A-propos</a></li>
+                <li class="item"><a href="#">FAQ</a></li>
+            </ul>
+        </nav>
+
+        <!-- -------------------  Header ------------------- -->
+        <header class="header">
+            <!-- ------ titre principale de la page ------ -->
+            <h1>titre principale de la page</h1>
+        </header>
+
+        <!-- -------------------  Main Section ------------------- -->
+        <main>
+            <!-- ---------  Section --------- -->
+            <section>
+
+            </section>
+        </main>
+
+        <!-- -------------------  Footer ------------------- -->
+        <footer class="footer">
+            <div class="line2">© 2025 Guy Michel Foko. Tous droits réservés.</div>
+        </footer>
+    </div>
+
+    <!-- Aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        window.addEventListener('load', () => {
+            AOS.init({
+                once: true, // évite les recalculs
+                duration: 400,
+                easing: 'ease-out',
+            });
+        });
+    </script>
+</body>
+
+</html>

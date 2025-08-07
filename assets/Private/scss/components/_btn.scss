@@ -1,0 +1,19 @@
+
+//  -------- éléments heritable --------
+%btn{
+    padding: .5em 2em;
+    transition: backgound .3s;
+    border-radius: 4px;
+
+    &:hover{
+        transition: backgound .3s;
+    }
+}
+
+%shadow{
+    box-shadow: 0 0 5px #3333;
+}
+
+//  -------- éléments heritable --------
+
+

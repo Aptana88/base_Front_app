@@ -1,0 +1,53 @@
+// comanter les polices non utiliser
+
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
+
+
+// Polices telechager
+/* rubik-wet-paint Regular */
+@font-face {
+  font-family: 'Rubik Wet Paint';
+  src: url('../fonts/Rubik_Wet_Paint/RubikWetPaint-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; /* passse imediatement a une pollise de secour en cas d'indisponinibilité */
+}
+
+/* Roboto Regular */
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto/Roboto-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; /* passse imediatement a une pollise de secour en cas d'indisponinibilité */
+}
+
+/* Roboto Bold */
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/roboto/Roboto-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* Nunito Regular */
+@font-face {
+  font-family: 'Nunito';
+  src: url('../fonts/Nunito/Nunito-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Nunito Bold */
+@font-face {
+  font-family: 'Nunito';
+  src: url('../fonts/nunito/Nunito-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

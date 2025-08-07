@@ -1,0 +1,39 @@
+
+.text_ellipsis {
+    //trois point de suspension pour un text trop long
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
+}
+
+.indent-p {
+    //espacement aux debut des paragraphe ou du text en general
+    text-indent: 5%;
+}
+
+//text qui sert de masque pour le background d'un composant (degradé, images..)
+.text-mask {
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.primary-text {
+    // color: var(--primary-color);
+}
+
+
+// apparence des titres
+.title {
+    // line-height: calc(30px + 1.6vw);
+    // font-size: calc(1.2rem + 1.5vw);
+    // margin-bottom: 10px;
+    // font-family: 'Rubik Wet Paint', 'roboto', sans-serif;
+}
+
+// apparence des description en bas des titres
+.des-title{
+
+}
+

@@ -1,0 +1,10 @@
+// couleurs secondaire du theme (fond et texte)
+@use "dark";
+@use "light"; 
+
+// Colleur Principale du theme
+:root {
+  --primary: #6c42f3;
+  --secondary: #002060;
+  --tirth: #eba923;
+}
